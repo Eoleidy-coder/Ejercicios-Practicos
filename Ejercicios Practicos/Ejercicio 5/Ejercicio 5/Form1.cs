@@ -23,31 +23,28 @@ namespace Ejercicio_5
         {
             if (radioButton1.Checked)
             {
-                label1.Text = "Seleccionaste: Opción 1";
+                lblResultado.Text = "Seleccionaste: Opción 1";
             }
             else if (radioButton2.Checked)
             {
-                label1.Text = "Seleccionaste: Opción 2";
+                lblResultado.Text = "Seleccionaste: Opción 2";
             }
             else if (radioButton3.Checked)
             {
-                label1.Text = "Seleccionaste: Opción 3";
+                lblResultado.Text = "Seleccionaste: Opción 3";
             }
             else
             {
-                label1.Text = "No has seleccionado ninguna opción";
+                lblResultado.Text = "No has seleccionado ninguna opción";
             }
-        }
-
-        private void btnAceptar_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 
 }

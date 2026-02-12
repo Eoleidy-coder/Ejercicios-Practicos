@@ -32,7 +32,7 @@
             radioButton2 = new RadioButton();
             radioButton3 = new RadioButton();
             btnAceptar = new Button();
-            label1 = new Label();
+            lblResultado = new Label();
             SuspendLayout();
             // 
             // radioButton1
@@ -78,24 +78,26 @@
             btnAceptar.TabIndex = 3;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
-            btnAceptar.Click += btnAceptar_Click_1;
+            btnAceptar.Click += btnAceptar_Click;
             // 
-            // label1
+            // lblResultado
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(98, 237);
-            label1.Name = "label1";
-            label1.Size = new Size(172, 25);
-            label1.TabIndex = 4;
-            label1.Text = "                                ";
-            label1.Click += label1_Click;
+            lblResultado.AutoSize = true;
+            lblResultado.BackColor = Color.White;
+            lblResultado.ForeColor = SystemColors.ControlDarkDark;
+            lblResultado.Location = new Point(98, 245);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(172, 25);
+            lblResultado.TabIndex = 4;
+            lblResultado.Text = "                                ";
+            lblResultado.Click += label1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(358, 330);
-            Controls.Add(label1);
+            Controls.Add(lblResultado);
             Controls.Add(btnAceptar);
             Controls.Add(radioButton3);
             Controls.Add(radioButton2);
@@ -112,6 +114,6 @@
         private RadioButton radioButton2;
         private RadioButton radioButton3;
         private Button btnAceptar;
-        private Label label1;
+        private Label lblResultado;
     }
 }
